@@ -9,7 +9,6 @@ import codigoProduccion.EquipoTrabajo;
 import codigoProduccion.FuerzaBruta;
 
 public class InterfazBotones {
-	
 	private Button button = new Button("Crear Grupo de Trabajo");
 	private Button button1menos = new Button("<<");
 	private Button button1mas = new Button(">>");
