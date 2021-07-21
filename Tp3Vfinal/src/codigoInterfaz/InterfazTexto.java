@@ -13,20 +13,20 @@ public class InterfazTexto {
 	private Label label_4 = new Label("Testers");
 	private Label label_5 = new Label("Cant. Minima");
 	private Label label_6 = new Label("Cant. Maxima");
-	private int t1=1;
-	private int t2=1;
-	private int t3=1;
-	private int t4=1;
+	private int t1 = 1;
+	private int t2 = 1;
+	private int t3 = 1;
+	private int t4 = 1;
 	private TextField textField = new TextField("1");
-	private TextField textField_1 = new TextField(t1+"");
+	private TextField textField_1 = new TextField(t1 + "");
 	private TextField textField_2 = new TextField("1");
-	private TextField textField_3 = new TextField(t2+"");
+	private TextField textField_3 = new TextField(t2 + "");
 	private TextField textField_4 = new TextField("1");
-	private TextField textField_5 = new TextField(t3+"");
+	private TextField textField_5 = new TextField(t3 + "");
 	private TextField textField_6 = new TextField("1");
-	private TextField textField_7 = new TextField(t4+"");
-	
-	InterfazTexto(){
+	private TextField textField_7 = new TextField(t4 + "");
+
+	InterfazTexto() {
 		label.setAlignment(Label.CENTER);
 		label.setBackground(Color.LIGHT_GRAY);
 		label.setBounds(10, 10, 135, 22);
@@ -60,7 +60,8 @@ public class InterfazTexto {
 		textField_5.setEditable(false);
 		textField_6.setEditable(false);
 		textField_7.setEditable(false);
-	}	
+	}
+
 	public void buffer(JPanel contentPane) {
 		contentPane.add(label);
 		contentPane.add(label_1);
@@ -78,48 +79,50 @@ public class InterfazTexto {
 		contentPane.add(textField_6);
 		contentPane.add(textField_7);
 	}
+
 	public TextField getText(int a) {
-		if(a==1) {
+		if (a == 1) {
 			return textField_1;
 		}
-		if(a==2) {
+		if (a == 2) {
 			return textField_3;
 		}
-		if(a==3) {
+		if (a == 3) {
 			return textField_5;
-		}else {
+		} else {
 			return textField_7;
 		}
 	}
-	
-	public void setValue(int a,int b) {
-		if(a==1) {
-			t1=b;
-			textField_1.setText(t1+"");
+
+	public void setValue(int a, int b) {
+		if (a == 1) {
+			t1 = b;
+			textField_1.setText(t1 + "");
 		}
-		if(a==2) {
-			t2=b;
-			textField_3.setText(t2+"");
+		if (a == 2) {
+			t2 = b;
+			textField_3.setText(t2 + "");
 		}
-		if(a==3) {
-			t3=b;
-			textField_5.setText(t3+"");
+		if (a == 3) {
+			t3 = b;
+			textField_5.setText(t3 + "");
 		}
-		if(a==4) {
-			t4=b;
-			textField_7.setText(t4+"");
+		if (a == 4) {
+			t4 = b;
+			textField_7.setText(t4 + "");
 		}
 	}
+
 	public int getValue(int a) {
-		if(a==1) {
+		if (a == 1) {
 			return t1;
 		}
-		if(a==2) {
+		if (a == 2) {
 			return t2;
 		}
-		if(a==3) {
+		if (a == 3) {
 			return t3;
-		}else{
+		} else {
 			return t4;
 		}
 	}

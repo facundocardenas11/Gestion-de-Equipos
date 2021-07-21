@@ -16,8 +16,8 @@ public class InterfazTextoaddEmpleados {
 	private TextField tDNI = new TextField();
 	private TextField tNombre = new TextField();
 	private TextField tApellido = new TextField();
-	
-	InterfazTextoaddEmpleados(){
+
+	InterfazTextoaddEmpleados() {
 		label.setAlignment(Label.CENTER);
 		label.setBackground(Color.LIGHT_GRAY);
 		label.setBounds(707, 166, 151, 22);
@@ -40,6 +40,7 @@ public class InterfazTextoaddEmpleados {
 		tNombre.setBounds(798, 222, 85, 22);
 		tApellido.setBounds(889, 222, 85, 22);
 	}
+
 	void buffer(JPanel contentPane) {
 		contentPane.add(label);
 		contentPane.add(label_1);
@@ -52,18 +53,22 @@ public class InterfazTextoaddEmpleados {
 		contentPane.add(tNombre);
 		contentPane.add(tApellido);
 	}
+
 	public String getDNI() {
 		return tDNI.getText();
 	}
+
 	public String getNombre() {
 		return tNombre.getText();
 	}
+
 	public String getApellido() {
 		return tApellido.getText();
 	}
+
 	public void actualizar() {
 		tDNI.setText("");
 		tNombre.setText("");
-		tApellido.setText("");	
+		tApellido.setText("");
 	}
 }

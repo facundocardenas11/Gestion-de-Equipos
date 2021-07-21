@@ -5,27 +5,33 @@ public class Empleado {
 	private String dni;
 	private String nombre;
 	private String apellido;
-	
-	Empleado(){	
+
+	Empleado() {
 	}
-	public Empleado(String rol,String dni,String nombre,String apellido){
-		this.rol=rol;
-		this.dni=dni;
-		this.nombre=nombre;
-		this.apellido=apellido;
+
+	public Empleado(String rol, String dni, String nombre, String apellido) {
+		this.rol = rol;
+		this.dni = dni;
+		this.nombre = nombre;
+		this.apellido = apellido;
 	}
+
 	public String getRol() {
 		return rol;
 	}
+
 	public String getDni() {
 		return dni;
 	}
+
 	public String getNombre() {
 		return nombre;
 	}
+
 	public String getApellido() {
 		return apellido;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -44,14 +50,16 @@ public class Empleado {
 			return false;
 		return true;
 	}
+
 	@Override
 	public String toString() {
-		return dni +" "+nombre +" "+apellido;
+		return dni + " " + nombre + " " + apellido;
 	}
+
 	public boolean compararDNI(String a) {
-		if(this.dni.equals(a)) {
+		if (this.dni.equals(a)) {
 			return true;
 		}
 		return false;
-	}	
+	}
 }

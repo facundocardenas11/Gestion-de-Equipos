@@ -9,8 +9,8 @@ public class InterfazTextoRolesEmpleados {
 	private Label label_1 = new Label("Arquitectos");
 	private Label label_2 = new Label("Programadores");
 	private Label label_3 = new Label("Testers");
-	
-	InterfazTextoRolesEmpleados(){
+
+	InterfazTextoRolesEmpleados() {
 		label.setBounds(10, 166, 161, 22);
 		label.setAlignment(Label.CENTER);
 		label.setBackground(Color.LIGHT_GRAY);
@@ -24,10 +24,11 @@ public class InterfazTextoRolesEmpleados {
 		label_3.setAlignment(Label.CENTER);
 		label_3.setBackground(Color.LIGHT_GRAY);
 	}
+
 	void buffer(JPanel contentPane) {
 		contentPane.add(label);
 		contentPane.add(label_1);
 		contentPane.add(label_2);
 		contentPane.add(label_3);
-	}	
+	}
 }

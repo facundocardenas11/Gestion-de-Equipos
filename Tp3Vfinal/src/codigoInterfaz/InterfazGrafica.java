@@ -7,6 +7,10 @@ import codigoProduccion.EquipoTrabajo;
 import codigoProduccion.FuerzaBruta;
 
 public class InterfazGrafica extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private InterfazTexto jText = new InterfazTexto();
 	private InterfazBotones jButton = new InterfazBotones();
@@ -18,7 +22,7 @@ public class InterfazGrafica extends JFrame {
 	private FuerzaBruta fuerzaBruta = new FuerzaBruta();
 	
 	public InterfazGrafica() {
-		setTitle("Software Factory");
+		setTitle("Gestiona de tu equipo");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1000, 700);
 		contentPane = new JPanel();
